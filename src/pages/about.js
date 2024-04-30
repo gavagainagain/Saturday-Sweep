@@ -1,9 +1,10 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 
 
-const AboutPage = () => {
+const AboutPage = () => { 
   return (
     <main>
         <Layout pageTitle="About Me">
@@ -13,11 +14,8 @@ const AboutPage = () => {
   )
 }
 
-export const Head = () => (
-    <>
-      <title>About Me</title>
-      <meta name="description" content="This is a personal project that aims to help me understand how react works" />
-    </>
-  )
+
+export const Head = () => <Seo title="About Me" />
+
 
   export default AboutPage

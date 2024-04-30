@@ -3,11 +3,18 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Saturday Sweep`,
+    title: `Cute wee dug`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-  ],
-}
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `blog`,
+      path: `${__dirname}/blog`,
+    }
+  },
+],
+};
